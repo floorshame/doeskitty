@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doeskitty</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="Page">
+        <center>
+            <h1 class="title">doeskitty.xyz</h1>
+            
+        </center>
+        <button class="projectButton">
+            Fiish<br>
+        
+            <span class="material-symbols-outlined">&#xe30a;</span>
+            <span class="material-symbols-outlined">&#xe32f;</span>
+        </button>
+
+        <button class="projectButton">
+            DuckyBot<br>
+        
+            <span class="material-symbols-outlined">&#xe30a;</span>
+        </button>
+        <center>
+            <section class="footer">
+                <span class="material-symbols-outlined" id="switch" onclick="toggleSwitch()">&#xe9f5;</span>
+
+                <div id="popout">
+                    :troll:
+                </div>
+
+
+            </section>
+        </center>
+
+        
+    </div>
+</body>
+</html>
+
+
+<script>
+document.getElementById("popout").style.display = "none"
+
+switchs = false
+function toggleSwitch() {
+    if (switchs == false) {
+        document.getElementById("switch").innerHTML = "&#xe9f6"
+        switchs = true
+        document.getElementById("popout").style.display = ""
+    } else {
+        document.getElementById("switch").innerHTML = "&#xe9f5"
+        switchs = false
+        document.getElementById("popout").style.display = "none"
+
+    }
+}
+</script>
